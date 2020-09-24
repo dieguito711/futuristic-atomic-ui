@@ -5,3 +5,4 @@ import axios from "axios";
 const Home = () => {
   return <Layout></Layout>;
 };
+export default Home;
