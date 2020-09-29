@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
-const Container = styled.header`
+const Container = styled.footer`
   font-family: "Montserrat", sans-serif;
   background-color: ${leerColor(colores.negro)};
   color: #fff;
-  width: 100vw;
-  height: 20vh;
+  width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,9 +18,10 @@ const Container = styled.header`
 `;
 
 const LogoContainer = styled.div`
-  margin-left: 4em;
+  padding-top: 4em;
 `;
 const Legal = styled.span`
-  margin-bottom: 2em;
+  margin-top: 2em;
+  padding-bottom: 2em;
 `;
 export { Container, LogoContainer, Legal };
