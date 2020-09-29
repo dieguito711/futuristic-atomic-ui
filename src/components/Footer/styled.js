@@ -6,8 +6,9 @@ const Container = styled.header`
   background-color: ${leerColor(colores.negro)};
   color: #fff;
   width: 100vw;
-  height: 10vh;
+  height: 20vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -15,27 +16,11 @@ const Container = styled.header`
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 `;
+
 const LogoContainer = styled.div`
   margin-left: 4em;
 `;
-const Nav = styled.div`
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2em;
-  }
-  ul li {
-    margin-right: 2em;
-    list-style-type: none;
-    font-size: 12px;
-  }
-  li:hover {
-    color: ${leerColor(colores.violeta1)};
-    cursor: pointer;
-  }
-  li:active {
-    color: ${leerColor(colores.violeta2)};
-  }
+const Legal = styled.span`
+  margin-bottom: 2em;
 `;
-
-export { Container, Nav, LogoContainer };
+export { Container, LogoContainer, Legal };

@@ -4,7 +4,7 @@ import { leerColor, colores } from "../../constants";
 const Container = styled.header`
   font-family: "Montserrat", sans-serif;
   background-color: ${leerColor(colores.negro)};
-  color: #fff;
+  color: ${leerColor(colores.blanco)};
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -15,27 +15,5 @@ const Container = styled.header`
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 `;
-const LogoContainer = styled.div`
-  margin-left: 4em;
-`;
-const Nav = styled.div`
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2em;
-  }
-  ul li {
-    margin-right: 2em;
-    list-style-type: none;
-    font-size: 12px;
-  }
-  li:hover {
-    color: ${leerColor(colores.violeta1)};
-    cursor: pointer;
-  }
-  li:active {
-    color: ${leerColor(colores.violeta2)};
-  }
-`;
 
-export { Container, Nav, LogoContainer };
+export { Container };
