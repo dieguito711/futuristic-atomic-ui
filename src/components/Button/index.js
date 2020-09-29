@@ -1,9 +1,9 @@
 import React from "react";
-import { Inner } from "./styled";
+import { Container } from "./styled";
 const Button = ({ children, ...props }) => {
   const { type, disabled, size, text } = props;
   console.log(type);
-  return <Inner type={type}>{children}</Inner>;
+  return <Container type={type}>{children}</Container>;
 };
 
 export default Button;

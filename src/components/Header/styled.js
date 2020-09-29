@@ -37,5 +37,14 @@ const Nav = styled.div`
     color: ${leerColor(colores.violeta2)};
   }
 `;
-
-export { Container, Nav, LogoContainer };
+const Link = styled.a`
+  text-decoration: none;
+  color: ${leerColor(colores.blanco)};
+  :hover {
+    color: ${leerColor(colores.violeta1)};
+  }
+  /* :visited {
+    color: ${leerColor(colores.blanco)};
+  } */
+`;
+export { Container, Nav, LogoContainer, Link };

@@ -2,13 +2,13 @@ import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 
-const Inner = styled.button`
+const Container = styled.button`
   text-decoration: inherit;
   font-family: "Gugi", cursive;
   font-size: 1rem;
   padding: 1rem 2rem;
   background-color: ${leerColor(colores.negro)};
-  color: #fff;
+  color: ${leerColor(colores.blanco)};
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
@@ -107,4 +107,4 @@ const Inner = styled.button`
     }};
   }
 `;
-export { Inner };
+export { Container };
