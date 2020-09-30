@@ -15,6 +15,9 @@ const Container = styled.footer`
 
 const LogoContainer = styled.div`
   padding-top: 4em;
+  img {
+    width: 8em;
+  }
 `;
 const Legal = styled.span`
   margin-top: 2em;

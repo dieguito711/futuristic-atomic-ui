@@ -5,6 +5,7 @@
   flex-direction: column;
 }
 .inner {
+  min-height: 70vh;
   width: 100%;
 }
 .inner div {

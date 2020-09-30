@@ -4,7 +4,7 @@ const Footer = ({ children, ...props }) => {
   return (
     <Container>
       <LogoContainer>
-        <img src="" alt="logo" />
+        <img src="/logo_vert.svg" alt="logo" />
       </LogoContainer>
       <Legal>creative commons. buenos aires, argentina. 2020.</Legal>
     </Container>

@@ -2,6 +2,7 @@ const Color = require("color");
 export const colores = {
   blanco: Color.rgb(255, 255, 255),
   negro: Color.rgb(35, 35, 35),
+  gris: Color.rgb(99, 99, 99),
   verde1: Color.rgb(202, 254, 1),
   verde2: Color.rgb(177, 200, 33),
   violeta1: Color.rgb(243, 60, 131),

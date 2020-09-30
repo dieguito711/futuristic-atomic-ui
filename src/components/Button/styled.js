@@ -106,5 +106,12 @@ const Container = styled.button`
       }
     }};
   }
+  :disabled {
+    border-image-source: linear-gradient(
+      to bottom,
+      ${leerColor(colores.blanco)},
+      ${leerColor(colores.gris)}
+    );
+  }
 `;
 export { Container };
