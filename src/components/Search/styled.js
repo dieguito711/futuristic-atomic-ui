@@ -4,18 +4,22 @@ import { leerColor, colores } from "../../constants";
 import { BsSearch } from "react-icons/bs";
 
 const SearchContainer = styled.input`
+  background-color: ${leerColor(colores.negro)};
   font-size: 1em;
-  color: black;
+  color: ${leerColor(colores.blanco)};
   font-family: "Montserrat", cursive;
   text-align: left;
   border: none;
 `;
 
 const DivSearchContainer = styled.div`
+  svg {
+    color: ${leerColor(colores.blanco)};
+  }
   border: solid;
   border-image-slice: 1;
   border-width: 0px 0px 3px 0px;
-  border-color: black;
+  border-color: ${leerColor(colores.blanco)};
   :focus {
     color: ${leerColor(colores.violeta1)};
     outline: none;
@@ -33,6 +37,9 @@ const DivSearchContainer = styled.div`
     );
   }
   :hover {
+    svg {
+      color: ${leerColor(colores.violeta1)};
+    }
     color: ${leerColor(colores.violeta1)};
     outline: none;
     border-image-source: linear-gradient(

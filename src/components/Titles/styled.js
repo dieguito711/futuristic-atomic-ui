@@ -59,7 +59,7 @@ const TitleContainer = styled.h1`
     }
   }};
   margin: 0;
-  color: black;
+  color: ${leerColor(colores.blanco)};
   font-family: "Gugi", cursive;
   text-transform: uppercase;
 `;

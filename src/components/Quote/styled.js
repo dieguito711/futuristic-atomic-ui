@@ -4,7 +4,7 @@ import { leerColor, colores } from "../../constants";
 
 const QuoteContainer = styled.p`
   font-size: 1.2em;
-  color: black;
+  color: ${leerColor(colores.blanco)};
   font-family: "Gugi", cursive;
   width: 90%;
   text-align: left;

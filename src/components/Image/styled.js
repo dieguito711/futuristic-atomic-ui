@@ -21,7 +21,8 @@ const Container = styled.figure`
     }
     /* width: 100%; */
     z-index: 100;
-    background: ${leerColor(colores.blanco)} !important;
+    color: ${leerColor(colores.blanco)};
+    background-color: ${leerColor(colores.negro)};
     padding: 0.5em;
     letter-spacing: 0.1em;
     text-align: left;

@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 const Container = styled.div`
+  color: ${leerColor(colores.blanco)};
+  background-color: ${leerColor(colores.negro)};
   display: flex;
   width: 25%;
   flex-direction: column;
