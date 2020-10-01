@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Nav, LogoContainer, Link } from "./styled";
-
+import { Container, Nav, LogoContainer } from "./styled";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const Header = ({ children, ...props }) => {
   return (
     <Container>
@@ -10,19 +10,19 @@ const Header = ({ children, ...props }) => {
       <Nav>
         <ul>
           <li>
-            <Link href="/">home</Link>
+            <Link to="/">home</Link>
           </li>
           <li>
-            <Link href="/components">components</Link>
+            <Link to="/components">components</Link>
           </li>
           <li>
-            <Link href="/experiments">experiments</Link>
+            <Link to="/experiments">experiments</Link>
           </li>
           <li>
-            <Link href="/aboutus">about us</Link>
+            <Link to="/aboutus">about us</Link>
           </li>
           <li>
-            <Link href="userdashboard">user dashboard</Link>
+            <Link to="userdashboard">user dashboard</Link>
           </li>
         </ul>
       </Nav>

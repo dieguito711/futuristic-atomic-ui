@@ -20,6 +20,10 @@ const LogoContainer = styled.div`
   }
 `;
 const Legal = styled.span`
+  ::selection {
+    background: ${leerColor(colores.violeta1)};
+    color: ${leerColor(colores.blanco)};
+  }
   margin-top: 2em;
   padding-bottom: 2em;
 `;
