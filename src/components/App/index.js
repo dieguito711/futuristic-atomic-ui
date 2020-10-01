@@ -6,10 +6,12 @@ import Experiments from "../../pages/Experiments";
 import AboutUs from "../../pages/AboutUs";
 import UserDashboard from "../../pages/UserDashboard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import GlobalStyle from "../../constants/globalStyle";
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyle />
       <Router>
         <Switch>
           <Route exact path="/">

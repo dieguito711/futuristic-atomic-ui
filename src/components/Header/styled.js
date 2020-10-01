@@ -39,15 +39,13 @@ const Nav = styled.div`
   li:active {
     color: ${leerColor(colores.violeta2)};
   }
-`;
-const Link = styled.a`
-  text-decoration: none;
-  color: ${leerColor(colores.blanco)};
-  :hover {
-    color: ${leerColor(colores.violeta1)};
-  }
-  /* :visited {
+  li a {
+    text-decoration: none;
     color: ${leerColor(colores.blanco)};
-  } */
+    :hover {
+      color: ${leerColor(colores.violeta1)};
+    }
+  }
 `;
-export { Container, Nav, LogoContainer, Link };
+
+export { Container, Nav, LogoContainer };
