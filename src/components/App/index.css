@@ -4,12 +4,17 @@
   display: flex;
   flex-direction: column;
 }
-.inner {
+/* .inner {
+  min-height: 70vh;
   width: 100%;
-}
-.inner div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+/* .inner div {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   margin: 10em auto;
-}
+} */

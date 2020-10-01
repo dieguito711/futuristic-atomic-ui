@@ -17,6 +17,9 @@ const Container = styled.header`
 `;
 const LogoContainer = styled.div`
   margin-left: 4em;
+  img {
+    width: 8em;
+  }
 `;
 const Nav = styled.div`
   ul {

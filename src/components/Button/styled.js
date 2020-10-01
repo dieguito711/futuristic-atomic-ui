@@ -12,6 +12,31 @@ const Container = styled.button`
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
+
+  font-size: ${(props) => {
+    switch (props.size) {
+      case "s":
+        return `0.5rem`;
+      case "m":
+        return `0.7rem`;
+      case "l":
+        return `1rem`;
+      default:
+        return `0.7rem`;
+    }
+  }};
+  padding: ${(props) => {
+    switch (props.size) {
+      case "s":
+        return `0.3rem 0.6rem`;
+      case "m":
+        return `0.5rem 1rem`;
+      case "l":
+        return `1rem 2rem`;
+      default:
+        return `0.5rem 1rem`;
+    }
+  }};
   border-image-source: ${(props) => {
     switch (props.type) {
       case "process":
@@ -105,6 +130,14 @@ const Container = styled.button`
           )}, ${leerColor(colores.violeta1)}, ${leerColor(colores.violeta2)});`;
       }
     }};
+  }
+  :disabled {
+    color: ${leerColor(colores.gris)};
+    border-image-source: linear-gradient(
+      to bottom,
+      ${leerColor(colores.blanco)},
+      ${leerColor(colores.gris)}
+    );
   }
 `;
 export { Container };
