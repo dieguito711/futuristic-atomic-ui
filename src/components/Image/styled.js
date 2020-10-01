@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 const Container = styled.figure`
-  height: 80%;
+  /* height: 100%;
   z-index: 1;
   position: relative;
   width: 20%;
-  font-size: 0;
+  font-size: 0; */
   img {
     width: 100%;
     object-fit: cover;
@@ -19,7 +19,7 @@ const Container = styled.figure`
       background: ${leerColor(colores.violeta1)};
       color: ${leerColor(colores.blanco)};
     }
-    width: 100%;
+    /* width: 100%; */
     z-index: 100;
     background: ${leerColor(colores.blanco)} !important;
     padding: 0.5em;
@@ -31,6 +31,13 @@ const Container = styled.figure`
     border: 2px solid ${leerColor(colores.violeta2)};
   }
 `;
+const ImageContainer = styled.div`
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  font-size: 0;
+`;
 const Overlay = styled.div`
   position: absolute;
   top: 0;
@@ -38,6 +45,7 @@ const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${leerColor(colores.gris)};
+  opacity: 0.3;
   :hover {
     background: linear-gradient(
       ${leerColor(colores.verde1)},
@@ -47,7 +55,6 @@ const Overlay = styled.div`
       ${leerColor(colores.violeta2)}
     );
   }
-  opacity: 0.3;
 `;
 
-export { Container, Overlay };
+export { Container, ImageContainer, Overlay };

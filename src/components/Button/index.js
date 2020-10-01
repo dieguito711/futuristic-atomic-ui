@@ -6,10 +6,12 @@ const Button = ({ children, ...props }) => {
   return (
     <>
       {!disabled ? (
-        <Container type={type}>{children}</Container>
+        <Container type={type} size={size}>
+          {text}
+        </Container>
       ) : (
-        <Container disabled type={type}>
-          {children}
+        <Container disabled type={type} size={size}>
+          {text}
         </Container>
       )}
     </>

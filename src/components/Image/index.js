@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Overlay } from "./styled";
+import { Container, ImageContainer, Overlay } from "./styled";
 const Image = ({ children, ...props }) => {
   const { caption, src } = props;
   return (
     <Container>
-      <Overlay></Overlay>
-
-      <img src={src} />
-
+      <ImageContainer>
+        <Overlay />
+        <img src={src} />
+      </ImageContainer>
       {caption !== "" ? (
         <div className="figcaption_container">
           <figcaption>{caption}</figcaption>
