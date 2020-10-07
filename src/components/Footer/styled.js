@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 const Container = styled.footer`
   font-family: "Montserrat", sans-serif;
-  background-color: ${leerColor(colores.negro)};
-  color: #fff;
+  background-color: ${leerColor(colores.blanco)};
+  color: ${leerColor(colores.negro)};
   width: 100%;
   height: fit-content;
   display: flex;

@@ -5,7 +5,7 @@ const Header = ({ children, ...props }) => {
   return (
     <Container>
       <LogoContainer>
-        <img src="/logo.svg" alt="logo" />
+        <img src="/logo_fondoblanco.svg" alt="logo" />
       </LogoContainer>
       <Nav>
         <ul>

@@ -12,7 +12,8 @@ const InputSelectContainer = styled.select`
   border-image-slice: 1;
   border-width: 0px 0px 3px 0px;
   border-color: ${leerColor(colores.violeta1)};
-
+  padding: 1em;
+  margin: 1em auto;
   option {
     color: ${leerColor(colores.violeta1)};
   }

@@ -55,7 +55,7 @@ const DivSearchContainer = styled.div`
       ${leerColor(colores.violeta2)}
     );
   }
-  margin: 0 !important;
+  margin: 0 auto !important;
   width: fit-content;
   :focus {
     color: ${leerColor(colores.violeta1)};

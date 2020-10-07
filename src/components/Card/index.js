@@ -5,7 +5,6 @@ import Button from "../Button";
 import { Container, ButtonsContainer } from "./styled";
 const Card = ({ children, ...props }) => {
   const { id, title, text, buttons } = props;
-  console.log(buttons);
   return (
     <Container>
       <h1>{title}</h1>

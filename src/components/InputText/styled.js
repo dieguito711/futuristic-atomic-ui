@@ -4,6 +4,9 @@ import { leerColor, colores } from "../../constants";
 import { BsSearch } from "react-icons/bs";
 
 const Container = styled.input`
+  @media (max-width: 700px) {
+    margin: 1em auto;
+  }
   font-size: 1em;
   color: ${leerColor(colores.blanco)};
   background-color: ${leerColor(colores.negro)};

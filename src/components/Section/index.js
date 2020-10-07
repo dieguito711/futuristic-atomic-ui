@@ -1,7 +1,8 @@
 import React from "react";
 import { Container } from "./styled";
 const Section = ({ children, ...props }) => {
-  return <Container>{children}</Container>;
+  const { direction } = props;
+  return <Container direction={direction}>{children}</Container>;
 };
 
 export default Section;

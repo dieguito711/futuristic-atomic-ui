@@ -11,6 +11,9 @@ const QuoteContainer = styled.p`
 `;
 
 const DivQuoteContainer = styled.div`
+  @media (max-width: 700px) {
+    margin: 1em auto;
+  }
   border: solid;
   border-image-slice: 1;
   border-width: 0px 0px 0px 7px;

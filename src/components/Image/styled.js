@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 const Container = styled.figure`
+  @media (max-width: 700px) {
+    margin: 1em auto;
+  }
   /* height: 100%;
   z-index: 1;
   position: relative;

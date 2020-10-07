@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 
 const Container = styled.button`
+  @media (max-width: 700px) {
+    margin: 1em auto;
+  }
   text-decoration: inherit;
   font-family: "Gugi", cursive;
   font-size: 1rem;

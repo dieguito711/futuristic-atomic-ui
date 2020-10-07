@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 const Container = styled.div`
+  @media (max-width: 700px) {
+    width: 90%;
+    margin: 1em auto;
+  }
   color: ${leerColor(colores.blanco)};
   background-color: ${leerColor(colores.negro)};
   display: flex;

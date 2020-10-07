@@ -15,6 +15,21 @@ import Card from "../components/Card";
 const Components = () => {
   return (
     <Layout>
+      <Section direction="row">
+        {/* Acá va select de componentes */}
+        <Titles type="h3">Component selection</Titles>
+        <InputSelect>
+          <option value="titles">Titles</option>
+          <option value="p">Paragraph</option>
+          <option value="quote">Quote</option>
+          <option value="search">Search</option>
+          <option value="input">Input</option>
+          <option value="select">Select</option>
+          <option value="buttons">Buttons</option>
+          <option value="img">Images</option>
+          <option value="card">Cards</option>
+        </InputSelect>
+      </Section>
       <Titles type="h3">Titulos</Titles>
       <Section>
         <Titles type="h1">h1</Titles>
@@ -24,7 +39,7 @@ const Components = () => {
         <Titles type="h5">h5</Titles>
         <Titles type="h6">h6</Titles>
       </Section>
-      <Titles type="h3">Párrafos</Titles>
+      <Titles type="h3">Parrafos</Titles>
       <Section>
         <Paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id
@@ -59,7 +74,11 @@ const Components = () => {
       </Section>
       <Titles type="h3">Select</Titles>
       <Section>
-        <InputSelect></InputSelect>
+        <InputSelect>
+          <option value="opcion 1">Opción 1</option>
+          <option value="opcion 2">Opción 2</option>
+          <option value="opcion 3">Opción 3</option>
+        </InputSelect>
       </Section>
       <Titles type="h3">Botones</Titles>
       <Section>
@@ -90,7 +109,7 @@ const Components = () => {
           size="l"
         ></Button>
       </Section>
-      <Titles type="h3">Imágenes</Titles>
+      <Titles type="h3">Imagenes</Titles>
       <Section>
         <Image src="/img1.png" caption=""></Image>
         <Image src="/img2.png" caption="hola este es un texto dummy"></Image>
