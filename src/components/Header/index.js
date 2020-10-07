@@ -1,7 +1,11 @@
 import React from "react";
 import { Container, Nav, LogoContainer } from "./styled";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
+import LoginButton from "../LoginButton";
+import LogoutButton from "../LogoutButton";
 const Header = ({ children, ...props }) => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
   return (
     <Container>
       <LogoContainer>
@@ -26,6 +30,7 @@ const Header = ({ children, ...props }) => {
           </li>
         </ul>
       </Nav>
+      {isAuthenticated ? <LogoutButton /> : <LoginButton />}
     </Container>
   );
 };
