@@ -3,6 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "../LoginButton";
 import LogoutButton from "../LogoutButton";
 import Titles from "../Titles";
+import Paragraph from "../Paragraph";
 import { Container } from "./styled";
 const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -15,8 +16,15 @@ const Profile = () => {
       <Container>
         <Titles type="h3">Perfil</Titles>
         <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
+        <div>
+          <Titles type="h5">Username:</Titles>
+          <Paragraph>{user.name}</Paragraph>
+        </div>
+        <div>
+          <Titles type="h5">Email:</Titles>
+          <Paragraph>{user.email}</Paragraph>
+        </div>
+
         <LogoutButton />
       </Container>
     );
