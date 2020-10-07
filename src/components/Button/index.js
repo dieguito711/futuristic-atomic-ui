@@ -5,7 +5,12 @@ const Button = ({ children, ...props }) => {
   return (
     <>
       {!disabled ? (
-        <Container type={type} size={size}>
+        <Container
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
+          type={type}
+          size={size}
+        >
           {text}
         </Container>
       ) : (

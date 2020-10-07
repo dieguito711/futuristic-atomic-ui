@@ -3,7 +3,7 @@ import { Container, ImageContainer, Overlay } from "./styled";
 const Image = ({ children, ...props }) => {
   const { caption, src } = props;
   return (
-    <Container>
+    <Container whileHover={{ scale: 1.1 }}>
       <ImageContainer>
         <Overlay />
         <img src={src} />

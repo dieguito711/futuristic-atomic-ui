@@ -4,7 +4,7 @@ import { Container } from "./styled";
 const InputTextarea = ({ children, ...props }) => {
   const { type } = props;
   return (
-    <Container type="textarea" wrap="hard">
+    <Container whileHover={{ scale: 1.1 }} type="textarea" wrap="hard">
       {children}
     </Container>
   );
