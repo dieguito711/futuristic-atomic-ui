@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 
-const Container = styled.button`
+const Container = styled(motion.button)`
   @media (max-width: 700px) {
     margin: 1em auto;
   }

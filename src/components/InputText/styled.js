@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
 import { BsSearch } from "react-icons/bs";
 
-const Container = styled.input`
+const Container = styled(motion.input)`
   @media (max-width: 700px) {
     margin: 1em auto;
   }

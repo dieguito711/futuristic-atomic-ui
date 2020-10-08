@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { leerColor, colores } from "../../constants";
-const Container = styled.figure`
+const Container = styled(motion.figure)`
   @media (max-width: 700px) {
     margin: 1em auto;
   }

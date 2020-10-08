@@ -12,7 +12,7 @@ const SearchContainer = styled.input`
   border: none;
 `;
 
-const DivSearchContainer = styled.div`
+const DivSearchContainer = styled(motion.div)`
   svg {
     color: ${leerColor(colores.blanco)};
   }
