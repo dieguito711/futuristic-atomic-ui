@@ -9,6 +9,8 @@ import Search from "../components/Search";
 import InputText from "../components/InputText";
 import InputTextarea from "../components/InputTextarea";
 import InputSelect from "../components/InputSelect";
+import InputRadio from "../components/InputRadio";
+import InputCheckbox from "../components/InputCheckbox";
 
 import Image from "../components/Image";
 import Card from "../components/Card";
@@ -79,6 +81,33 @@ const Components = () => {
           <option value="opcion 2">Opción 2</option>
           <option value="opcion 3">Opción 3</option>
         </InputSelect>
+      </Section>
+      <Titles type="h3">Radio</Titles>
+      <Section>
+        <InputRadio
+        name="prueba1">
+          Prueba 1
+        </InputRadio>
+        <InputRadio
+        name="prueba2">
+          Prueba 2
+        </InputRadio>
+        <InputRadio
+        name="prueba3">
+          Prueba 3
+        </InputRadio>
+      </Section>
+      <Titles type="h3">Checkbox</Titles>
+      <Section>
+        <InputCheckbox>
+          Prueba 1
+        </InputCheckbox>
+        <InputCheckbox>
+          Prueba 2
+        </InputCheckbox>
+        <InputCheckbox>
+          Prueba 3
+        </InputCheckbox>
       </Section>
       <Titles type="h3">Botones</Titles>
       <Section>
