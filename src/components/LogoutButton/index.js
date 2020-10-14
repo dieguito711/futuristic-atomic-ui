@@ -6,7 +6,7 @@ const LogoutButton = () => {
 
   return (
     <Container onClick={() => logout({ returnTo: window.location.origin })}>
-      Log Out
+      Log out
     </Container>
   );
 };

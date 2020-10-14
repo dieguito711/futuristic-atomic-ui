@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useState} from "react";
 import { InputCheckboxContainer } from "./styled";
 
 const InputCheckbox = ({ children, ...props }) => {
   
-  const { options, id, value, name } = props;
- 
+  const { options, id, value, name} = props;
+  const [color, cambiarColor] = useState(false);
+
 
   return (
-    <InputCheckboxContainer>
+    <InputCheckboxContainer color={color} onClick={() => cambiarColor(!color)}>
       <div 
         id={id} 
         name={name}
-        value={value} 
-        onClick={event => console.log("click checkbox input")}
-      />
+        value={value}
+        onClick={event => console.log("click checkbox input")} />
       <label > {children} </label>
     </InputCheckboxContainer>
   );

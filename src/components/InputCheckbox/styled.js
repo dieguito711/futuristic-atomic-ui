@@ -14,11 +14,12 @@ label {
 div {
 
   border: solid 2px;
-  border-color: ${leerColor(colores.violeta1)};
+  border-color: ${props => props.color ? colores.violeta2 : colores.violeta1};
   padding-left: 1.1em;
   display: inline;
   margin-right: 0.5em;
   border-radius: 0.2em;
+  background-color: ${props => props.color ? colores.violeta2 : 'none'};
 }
 
 

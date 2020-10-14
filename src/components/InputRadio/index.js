@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState} from "react";
 import { InputRadioContainer } from "./styled";
 
 const InputRadio = ({ children, ...props }) => {
   
   const { options, id, value, name } = props;
-  console.log(options);
+  const [color, cambiarColor] = useState(false);
 
   return (
-    <InputRadioContainer>
+    <InputRadioContainer color={color} onClick={() => cambiarColor(!color)}>
         <div 
             id={id}
             name={name} 
