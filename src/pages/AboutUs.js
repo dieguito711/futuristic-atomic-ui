@@ -24,8 +24,8 @@ const AboutUs = () => {
           <Section>
             <Section direction="column">
                 <Titles type="h2">Diego</Titles>
-                <Image src="/diego1.jpg" caption="" />
-                <Paragraph>Gente del bien que solo quiere aprobar programación</Paragraph>
+                <Image src="/diego1.jpg" caption="Hola Lean." />
+
                 <Button
                   disabled={false}
                   type="process"
@@ -35,8 +35,8 @@ const AboutUs = () => {
             </Section>
             <Section direction="column">
                 <Titles type="h2">Agustina</Titles>
-                <Image src="/agus1.jpg" caption="" />
-                <Paragraph>Gente del bien que solo quiere aprobar programación</Paragraph>
+                <Image src="/agus1.jpg" caption="Queremos aprobar." />
+
                 <Button
                   disabled={false}
                   type="process"
