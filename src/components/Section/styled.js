@@ -27,6 +27,7 @@ const Container = styled.section`
   }
   .grid_autores{
     width: 100%;
+    margin: 4em auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content:center;
