@@ -9,10 +9,10 @@ const Container = styled.section`
   justify-content: space-around;
   align-items: flex-start;
   align-self: flex-start;
-  figure{
-    margin: 0 auto;
+  .aboutus_figure{
+    margin: 0 auto !important;
   }
-  button{
+  .aboutus_button{
     margin: 2em auto;
   }
   @media (max-width: 760px) {
@@ -26,6 +26,7 @@ const Container = styled.section`
   }
   }
   .grid_autores{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content:center;

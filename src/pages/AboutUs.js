@@ -24,25 +24,15 @@ const AboutUs = () => {
           <Section>
             <Section direction="column">
                 <Titles type="h2">Diego</Titles>
-                <Image src="/diego1.jpg" caption="Hola Lean." />
+                <Image className="aboutus_figure" src="/diego1.jpg" caption="Hola Lean." />
 
-                <Button
-                  disabled={false}
-                  type="process"
-                  text="Aprobar"
-                  size="l"
-                ></Button>
+
             </Section>
             <Section direction="column">
                 <Titles type="h2">Agustina</Titles>
                 <Image src="/agus1.jpg" caption="Queremos aprobar." />
 
-                <Button
-                  disabled={false}
-                  type="process"
-                  text="Aprobar"
-                  size="l"
-                ></Button>
+
             </Section>
           </Section>
     </Layout>
