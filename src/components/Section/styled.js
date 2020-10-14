@@ -12,7 +12,22 @@ const Container = styled.section`
   @media (max-width: 760px) {
     flex-direction: column;
     margin: 0 auto;
+    .grid_autores{
+
+    grid-template-columns: 1fr !important;
+
+    grid-row-gap: 1em;
   }
+  }
+  .grid_autores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content:center;
+    align-self: center;
+    align-items: center;
+    grid-row-gap: 2em;
+  }
+
 `;
 
 export { Container };

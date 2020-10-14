@@ -24,6 +24,10 @@ const DivTitleContainer = styled.div`
 `;
 
 const TitleContainer = styled.h1`
+::selection {
+      background: ${leerColor(colores.violeta1)};
+      color: ${leerColor(colores.blanco)};
+    }
   width: fit-content;
   font-size: ${(props) => {
     switch (props.type) {

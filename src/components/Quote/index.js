@@ -6,6 +6,7 @@ const Quote = ({ children, ...props }) => {
   return (
     <DivQuoteContainer>
       <QuoteContainer type={type}>"{children}"</QuoteContainer>
+
     </DivQuoteContainer>
   );
 };

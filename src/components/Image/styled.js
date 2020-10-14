@@ -11,7 +11,8 @@ const Container = styled(motion.figure)`
   width: 20%;
   font-size: 0; */
   img {
-    width: 100%;
+    width: 250px;
+    height: 300px;
     object-fit: cover;
   }
   .figcaption_container {

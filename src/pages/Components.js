@@ -17,8 +17,8 @@ import Card from "../components/Card";
 const Components = () => {
   return (
     <Layout>
-      <Section direction="row">
-        {/* Acá va select de componentes */}
+      {/* <Section direction="row">
+
         <Titles type="h3">Component selection</Titles>
         <InputSelect>
           <option value="titles">Titles</option>
@@ -31,7 +31,7 @@ const Components = () => {
           <option value="img">Images</option>
           <option value="card">Cards</option>
         </InputSelect>
-      </Section>
+      </Section> */}
       <Titles type="h3">Titulos</Titles>
       <Section>
         <Titles type="h1">h1</Titles>
@@ -84,30 +84,15 @@ const Components = () => {
       </Section>
       <Titles type="h3">Radio</Titles>
       <Section>
-        <InputRadio
-        name="prueba1">
-          Prueba 1
-        </InputRadio>
-        <InputRadio
-        name="prueba2">
-          Prueba 2
-        </InputRadio>
-        <InputRadio
-        name="prueba3">
-          Prueba 3
-        </InputRadio>
+        <InputRadio name="prueba1">Prueba 1</InputRadio>
+        <InputRadio name="prueba2">Prueba 2</InputRadio>
+        <InputRadio name="prueba3">Prueba 3</InputRadio>
       </Section>
       <Titles type="h3">Checkbox</Titles>
       <Section>
-        <InputCheckbox>
-          Prueba 1
-        </InputCheckbox>
-        <InputCheckbox>
-          Prueba 2
-        </InputCheckbox>
-        <InputCheckbox>
-          Prueba 3
-        </InputCheckbox>
+        <InputCheckbox>Prueba 1</InputCheckbox>
+        <InputCheckbox>Prueba 2</InputCheckbox>
+        <InputCheckbox>Prueba 3</InputCheckbox>
       </Section>
       <Titles type="h3">Botones</Titles>
       <Section>

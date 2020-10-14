@@ -3,7 +3,7 @@ import { GridContainer, ColContainer } from './styled'
 
 const Grid = ({children, ...props}) => {
 
-    return ( 
+    return (
 
         <GridContainer
         colGap = { props.colGap }
@@ -15,9 +15,9 @@ const Grid = ({children, ...props}) => {
 
 const Col = ({children, ...props}) => {
 
-    return ( 
+    return (
 
-        <ColContainer 
+        <ColContainer
         desktop = { props.desktop }
         tablet = { props.tablet }
         mobile = { props.moibile }>
@@ -26,4 +26,4 @@ const Col = ({children, ...props}) => {
     )
 }
 
-export { Grid, Col };
+export default Grid;

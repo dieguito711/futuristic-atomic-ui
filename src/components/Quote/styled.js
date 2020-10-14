@@ -8,6 +8,10 @@ const QuoteContainer = styled.p`
   font-family: "Gugi", cursive;
   width: 90%;
   text-align: left;
+  ::selection {
+      background: ${leerColor(colores.violeta1)};
+      color: ${leerColor(colores.blanco)};
+    }
 `;
 
 const DivQuoteContainer = styled.div`

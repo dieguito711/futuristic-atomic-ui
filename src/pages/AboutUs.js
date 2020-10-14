@@ -24,7 +24,7 @@ const AboutUs = () => {
           <Section>
             <Section direction="column">
                 <Titles type="h2">Diego</Titles>
-                <Image src="/img1.png" caption="" />
+                <Image src="/diego1.jpg" caption="" />
                 <Paragraph>Gente del bien que solo quiere aprobar programación</Paragraph>
                 <Button
                   disabled={false}
@@ -35,7 +35,7 @@ const AboutUs = () => {
             </Section>
             <Section direction="column">
                 <Titles type="h2">Agustina</Titles>
-                <Image src="/img2.png" caption="" />
+                <Image src="/agus1.jpg" caption="" />
                 <Paragraph>Gente del bien que solo quiere aprobar programación</Paragraph>
                 <Button
                   disabled={false}
