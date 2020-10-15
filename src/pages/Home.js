@@ -12,7 +12,7 @@ import InputSelect from "../components/InputSelect";
 
 import Image from "../components/Image";
 import Card from "../components/Card";
-import Grid from '../components/Grid';
+import { Grid, Col } from '../components/Grid';
 
 const Home = () => {
   const autores = [
@@ -85,9 +85,20 @@ const Home = () => {
         </Titles>
 
       </Section>
-      <Section><Quote>My imagination makes me human and makes me a fool; it gives me all the world, and exiles me from it.
+      <Section>
+        <Quote>My imagination makes me human and makes me a fool; it gives me all the world, and exiles me from it.</Quote>
+      </Section>
 
-</Quote></Section>
+
+      {/*<Grid colGap = {50} rowGap = {40}>
+        
+        {autores && autores.map((autor) => {
+          return (<Col desktop={3} tablet={2} mobile={1}><Image key={autor.id} caption={autor.caption} src={autor.src}/></Col>)
+        })}
+
+      </Grid>*/}
+
+
       <Section direction="column">
         <div className="grid_autores">
         {autores && autores.map((autor) => {

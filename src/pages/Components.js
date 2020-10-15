@@ -14,6 +14,9 @@ import InputCheckbox from "../components/InputCheckbox";
 
 import Image from "../components/Image";
 import Card from "../components/Card";
+
+import { Grid, Col } from '../components/Grid';
+
 const Components = () => {
   return (
     <Layout>
