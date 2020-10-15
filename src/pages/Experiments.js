@@ -33,7 +33,7 @@ const Experiments = () => {
             width="800"
             height="533"
             xlinkHref={autores[0].linkRef}
-            filter="url(#duotone)"
+            filter="url(#duotone)" 
           />
 
           <filter id="duotone">
@@ -46,27 +46,27 @@ const Experiments = () => {
                 0 0 0 1 0"
             />
             <feComponentTransfer
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
               result="duotone"
             >
               <motion.feFuncR
-                type="table"
-                initial={{ tableValues: `${leerColor(colores.amarillo1)}` }}
-                animate={{ tableValues: `${leerColor(colores.violeta1)}` }}
-                transition={transition}
-              />
-              <motion.feFuncG
-                type="table"
-                initial={{ tableValues: `${ashBlue.g} ${green.g}` }}
-                animate={{ tableValues: `${deepBlue.g} ${pink.g}` }}
-                transition={transition}
-              />
-              <motion.feFuncB
-                type="table"
-                initial={{ tableValues: `${ashBlue.b} ${green.b}` }}
-                animate={{ tableValues: `${deepBlue.b} ${pink.b}` }}
-                transition={transition}
-              />
+              type="table"
+              initial={{ tableValues: `${ashBlue.r} ${green.r}` }}
+              animate={{ tableValues: `${deepBlue.r} ${pink.r}` }}
+              transition={transition}
+            />
+            <motion.feFuncG
+              type="table"
+              initial={{ tableValues: `${ashBlue.g} ${green.g}` }}
+              animate={{ tableValues: `${deepBlue.g} ${pink.g}` }}
+              transition={transition}
+            />
+            <motion.feFuncB
+              type="table"
+              initial={{ tableValues: `${ashBlue.b} ${green.b}` }}
+              animate={{ tableValues: `${deepBlue.b} ${pink.b}` }}
+              transition={transition}
+            />
               <feFuncA type="table" tableValues="0 1" />
             </feComponentTransfer>
           </filter>
@@ -75,6 +75,8 @@ const Experiments = () => {
       <Section>
         <Titles type="h5">{autores[0].caption}</Titles>
       </Section>
+      <button onClick={() => console.log("hola1")}>1</button>
+      <button onClick={() => console.log("hola2")}>2</button>
     </Layout>
   )
 }
