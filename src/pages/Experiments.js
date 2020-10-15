@@ -93,8 +93,37 @@ const Experiments = () => {
   ];
 
    {/* esta const está para ver si puedo modificar la src de la imagen, y también tendría que servir para modificar el titlo del autor/a */}
-  const imagen = 0;
 
+  const [ imagen, setImagen ] = useState(autores[0].linkRef);
+  const [ contImagen, setContImagen ] = useState(0);
+
+  const handleImagenF = () => {
+    if (contImagen < autores.length) {
+      console.log(contImagen, "esto es un if")
+      setContImagen(contImagen+1);
+      setImagen(autores[contImagen].linkRef);
+    } else {
+      console.log(contImagen, "esto es un else")
+      setContImagen(0)
+      setImagen(autores[0].linkRef)
+    }
+  }
+
+
+  const handleImagenB = () => {
+    if (contImagen <= 0) {
+    
+      console.log(contImagen, "esto es un else")
+      setContImagen(autores.length-1)
+      setImagen(autores[autores.length-1].linkRef)
+
+    } else {
+      console.log(contImagen, "esto es un if")
+      setContImagen(contImagen-1);
+      setImagen(autores[contImagen].linkRef);
+    }
+  }
+  
   return (
     <Layout>
       <Section>
@@ -106,7 +135,7 @@ const Experiments = () => {
       <Button
           disabled={false}
           type="process"
-          text={<AiFillCaretLeft onClick={() => console.log("Cambiar foto hacia la izquierda, osea -1")}/>}
+          text={<AiFillCaretLeft onClick={() => handleImagenB()}/>}
           size="l"
           onClick={() => console.log("Cambiar foto hacia la izquierda, osea -1")}
         />
@@ -116,7 +145,7 @@ const Experiments = () => {
             y="0"
             width="800"
             height="533"
-            xlinkHref={autores[imagen].linkRef}
+            xlinkHref={imagen}
             filter="url(#duotone)" 
           />
 
@@ -158,7 +187,7 @@ const Experiments = () => {
         <Button
           disabled={false}
           type="process"
-          text={<AiFillCaretRight onClick={() => console.log("Cambiar foto hacia la dercha, osea +1")}/>}
+          text={<AiFillCaretRight onClick={() => handleImagenF()}/>}
           size="l"
           onClick={() => console.log("Cambiar foto hacia la dercha, osea +1")}
         />
